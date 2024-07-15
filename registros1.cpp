@@ -3,7 +3,7 @@ using namespace std;
 struct empleados{
 		float sueldo;
 		char nombres[20];
-		char sexo[1];
+		char sexo[10];
 	};
 int main(){
 	empleados empleado[20];
