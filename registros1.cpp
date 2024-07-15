@@ -8,7 +8,7 @@ struct empleados{
 int main(){
 	empleados empleado[20];
 	int n,i,menor,mayor,me,ma;
-	menor=empleado[1].sueldo=0;
+	menor=5000;
 	mayor=0;
 	cout<<"Ingrese el numero de empleados de la compania DataTech: "; cin>>n;
 	for(i=1;i<=n;i++){
