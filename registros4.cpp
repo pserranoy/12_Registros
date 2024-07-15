@@ -11,7 +11,7 @@ int main(){
 	atleta atletas[20];
 	int mpais;
 	int n,mayor,ma,i;
-	char p,P;
+	char p[20];
 	cout<<"Ingrese el numero de atletas: "; cin>>n;
 	for(i=1;i<=n;i++){
 		cout<<"Datos del "<<i<<" atleta: "<<endl;
@@ -36,10 +36,10 @@ int main(){
 		}
 	}
 	cout<<"El atleta con mayor numero de medallas de "<<p<<" es: "<<endl;
-	cout<<atletas[mpais].nombres<<endl;
-	cout<<atletas[mpais].pais<<endl;
-	cout<<atletas[mpais].disciplina<<endl;
-	cout<<atletas[mpais].medallas<<endl;
+	cout<<"-Nombre: "<<atletas[mpais].nombres<<endl;
+	cout<<"-Pais: "<<atletas[mpais].pais<<endl;
+	cout<<"-Disciplina: "<<atletas[mpais].disciplina<<endl;
+	cout<<"-N._De_Medallas: "<<atletas[mpais].medallas<<endl;
 	return 0;
 }
 	
