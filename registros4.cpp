@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 using namespace std;
 struct atleta{
 		char pais[20];
@@ -10,7 +11,7 @@ int main(){
 	atleta atletas[20];
 	int mpais;
 	int n,mayor,ma,i;
-	int p;
+	char p,P;
 	cout<<"Ingrese el numero de atletas: "; cin>>n;
 	for(i=1;i<=n;i++){
 		cout<<"Datos del "<<i<<" atleta: "<<endl;
@@ -34,7 +35,11 @@ int main(){
 			}
 		}
 	}
-	cout<<"El atleta con mayor numero de medallas de "<<p<<" es: "<<atletas[mpais].nombres<<endl;
+	cout<<"El atleta con mayor numero de medallas de "<<p<<" es: "<<endl;
+	cout<<atletas[mpais].nombres<<endl;
+	cout<<atletas[mpais].pais<<endl;
+	cout<<atletas[mpais].disciplina<<endl;
+	cout<<atletas[mpais].medallas<<endl;
 	return 0;
 }
 	
