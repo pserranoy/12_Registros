@@ -8,9 +8,9 @@ struct atleta{
 	};
 int main(){
 	atleta atletas[20];
-	int mpais[10];
+	int mpais;
 	int n,mayor,ma,i;
-	char p[10];
+	int p;
 	cout<<"Ingrese el numero de atletas: "; cin>>n;
 	for(i=1;i<=n;i++){
 		cout<<"Datos del "<<i<<" atleta: "<<endl;
@@ -19,8 +19,9 @@ int main(){
 		cout<<"-Disciplina: "; cin>>atletas[i].disciplina;
 		cout<<"-N._De_Medallas: "; cin>>atletas[i].medallas;
 	}
-	cout<<"Ingrese un pais: "<<endl;
+	cout<<"Ingrese un pais: ";
 	cin>>p;
+	mpais=0;
 	for(i=1;i<=n;i++){
 		if(p==atletas[i].pais){
 			cout<<"Coincidencia con el "<<i<<" atleta: "<<endl;
@@ -28,10 +29,13 @@ int main(){
 		    cout<<"-Pais: "<<atletas[i].pais<<endl;
 		    cout<<"-Disciplina: "<<atletas[i].disciplina<<endl;
 		    cout<<"-N._De_Medallas: "<<atletas[i].medallas<<endl;
-		    if(atletas[i].medallas)
-		    mpais
+		    if(atletas[i].medallas>mpais){
+		    	mpais=i;
+			}
 		}
 	}
+	cout<<"El atleta con mayor numero de medallas de "<<p<<" es: "<<atletas[mpais].nombres<<endl;
+	return 0;
 }
 	
 	
